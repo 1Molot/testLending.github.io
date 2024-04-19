@@ -3,28 +3,45 @@ body {
     height: 100%;
 }
 
-/*.wrapper {*/
-/*    overflow: hidden;*/
-/*    max-width: 1440px;*/
-/*    padding: 0 10px;*/
-/*    margin: 0 auto;*/
-/*}*/
 
-.container {
-    width: 1248px;
+.wrapper_container {
+    max-width: 1240px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin: 0 auto;
     border: 1px solid red;
+
 }
- .container_block {
-     background: #f4f6fd;
-    border: 1px solid red;
-}
+
 
 .section{
-    padding-top: 50px;
-    width: 1440px;
-    margin: 0 auto;
-    
+    margin-top: 80px;
+    border: 1px solid green;
 }
+
+
+.container-travel {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tra_title{
+    /*font-family: var(--font-family);*/
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
 .image {
     width: 507px;
     height: 338px;
@@ -38,37 +55,16 @@ body {
     gap: 10px;
 }
 
-.tab-buttons {
+
+
+.groups_wrapper {
     display: flex;
-    gap: 10px;
 }
 
-.tab {
-    padding: 5px 10px;
-    background-color: #ccc;
-    border: none;
-    cursor: pointer;
-}
-
-.tab.active {
-    background-color: #f00;
-    color: #fff;
-}
-
-.tab-contents {
-    margin-top: 10px;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-.trevels {
-    display: flex;
+.image_groups{
+    width: 309px;
+    height: 129px;
+    object-fit: contain;
 }
 
 .trevels_block{
@@ -78,6 +74,7 @@ body {
     height: 422px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
     background: #fff;
+    display: flex;
 }
 
 .trevels_text {
@@ -88,3 +85,48 @@ body {
     height: 50px;
 }
 
+.trev_button {
+  cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    width: 167px;
+    height: 50px;
+    text-align: center;
+}
+
+.trev_button:hover {
+    /*background-color: blue;*/
+    color: #fff;
+    background: #0146fe;
+}
+.request {
+    display: flex;
+    justify-content: center;
+}
+.request_button {
+    border-radius: 12px;
+    padding: 20px 24px;
+    width: 366px;
+    height: 64px;
+    border: none;
+}
+
+.request_button:hover {
+    color: #fff;
+    background: #0146fe;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.how_title {
+
+    /*font-family: var(--font-family);*/
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #000;
+}
