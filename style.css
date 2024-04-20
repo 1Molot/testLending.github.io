@@ -6,13 +6,11 @@ body {
 .wrapper_container {
     max-width: 1240px;
     margin: 0 auto;
-    border: 1px solid red;
     background: #fff;
 }
 
 .section {
     margin-top: 80px;
-    border: 1px solid green;
 }
 
 /*header*/
@@ -20,9 +18,9 @@ body {
 .main__header {
     max-width: 1240px;
     height: 80px;
-    border: 1px solid green;
     justify-content: center;
     display: flex;
+    background: yellowgreen;
 }
 
 .header__text {
@@ -32,7 +30,6 @@ body {
 /*travel*/
 
 .container__travel {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -69,7 +66,6 @@ body {
 /*language*/
 
 .container__language {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -78,7 +74,6 @@ body {
 
 .language__text {
     width: 681px;
-    border: 1px solid red;
     margin-top: 64px;
 }
 
@@ -105,7 +100,6 @@ body {
 }
 
 .language__content {
-    border: 1px solid green;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -167,7 +161,6 @@ body {
 /*product*/
 
 .container__product {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -176,7 +169,6 @@ body {
 
 .product__text {
     width: 800px;
-    border: 1px solid red;
     margin-top: 70px;
     text-align: center;
     display: flex;
@@ -208,7 +200,6 @@ body {
 
 .tabs__block {
     width: 1240px;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -228,7 +219,6 @@ body {
 .tabs__nav-btn {
         border-radius: 12px;
         padding: 16px 32px;
-        /*width: 185px;*/
         cursor: pointer;
         border: none;
         text-align: center;
@@ -265,7 +255,6 @@ body {
 
 .tab__card__text {
     width: 514px;
-    border: 1px solid red;
     margin:42px 0 78px 42px;
 }
 
@@ -277,6 +266,7 @@ body {
     letter-spacing: -0.05em;
     color: #000;
 }
+
 .tab__card__description{
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -291,7 +281,6 @@ body {
 
 .tab__card__img {
     margin:42px 42px 42px 0;
-    border: 1px solid red;
     width: 507px;
     height: 338px;
 }
@@ -320,7 +309,6 @@ body {
 /*lingvanex*/
 
 .container__lingvanex {
-    border: 1px solid blue;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -392,11 +380,11 @@ body {
 
 .main__footer {
     margin-top: 80px;
-    height: 526px;
-    border: 1px solid green;
+    height: 200px;
     max-width: 1240px;
     justify-content: center;
     display: flex;
+    background: yellowgreen;
 }
 
 .main__footer__text {
