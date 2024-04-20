@@ -16,9 +16,16 @@ body {
 
 /*header*/
 
-.main-header {
+.main__header {
+    max-width: 1240px;
     height: 80px;
     border: 1px solid green;
+    justify-content: center;
+    display: flex;
+}
+
+.header__text{
+    text-align: center;
 }
 
 /*travel*/
@@ -82,62 +89,96 @@ body {
     width: 681px;
     height: 134px;
     border: 1px solid red;
-}
-
-.language__title{
-    /*font-family: var(--font-family);*/
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    font-size: 70px;
-    line-height: 100%;
-    letter-spacing: -0.05em;
-    text-align: center;
-    color: #000;
     margin-bottom: 20px;
 }
 
-.language__description {
-    /*font-family: var(--third-family);*/
-    font-family: 'Manrope', sans-serif ;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.8);
-}
 .language__content{
-    width: 1240px;
-    height: 422px;
+    /*width: 1240px;*/
+    /*height: 422px;*/
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .language__content {
+        /*width: 100%;*/
+        /*height: auto;*/
+        flex-direction: column;
+    }
+}
 
-/*общие*/
+/*.language__title{*/
+/*    !*font-family: var(--font-family);*!*/
+/*    font-family: 'Inter', sans-serif;*/
+/*    font-weight: 900;*/
+/*    font-size: 60px;*/
+/*    line-height: 100%;*/
+/*    letter-spacing: -0.05em;*/
+/*    text-align: center;*/
+/*    color: #000;*/
+/*    margin-top: 24px;*/
+/*}*/
+
+/*.language__description {*/
+/*    !*font-family: var(--third-family);*!*/
+/*    font-family: 'Manrope', sans-serif ;*/
+/*    font-weight: 400;*/
+/*    font-size: 18px;*/
+/*    line-height: 140%;*/
+/*    letter-spacing: -0.01em;*/
+/*    text-align: center;*/
+/*    color: rgba(42, 43, 47, 0.9);*/
+/*    margin-top: 12px;*/
+/*}*/
+
+
+/*общие language*/
 .language__translation{
     border: 2px solid rgba(0, 0, 0, 0.04);
     border-radius: 32px;
     width: 400px;
     height: 422px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .language__title{
-
+    /*font-family: var(--font-family);*/
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #000;
+    margin-top: 24px;
 }
 
 .language__description{
-
+    /*font-family: var(--font-family);*/
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 12px;
 }
 
 .language__image{
     width: 309px;
     height: 129px;
     object-fit: contain;
+    margin-top: 12px;
 }
 
 /*product*/
-
-
 
 .image {
     width: 507px;
@@ -146,6 +187,9 @@ body {
     object-fit: cover;
 
 }
+
+
+/*ligvanex*/
 
 .grid {
     display: grid;
@@ -223,9 +267,17 @@ body {
 
 
 
-.main-footer {
+.main__footer {
     margin-top: 80px;
     height: 526px;
     border: 1px solid green;
+    max-width: 1240px;
+    justify-content: center;
+    display: flex;
 }
+
+.main__text {
+    text-align: center;
+}
+
 
