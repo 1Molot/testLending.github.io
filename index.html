@@ -18,14 +18,12 @@
 <div class="wrapper_container">
 
     <header class="main__header">
-        <!-- Шапка -->
         <h4 class="header__text">Header</h4>
     </header>
 
     <main>
 
         <section class="section">
-
             <div class="container__travel">
                 <h1 class="travel__title">Travel and Hospitality</h1>
                 <p class="travel__description">Offline & Online Translation: image translation, translation history,
@@ -35,53 +33,41 @@
                     <button class="universal__button">Request a free trial</button>
                 </div>
             </div>
-
         </section>
 
         <section class="section">
-
             <div class="container__language">
-
                 <div class="language__text">
                     <h3 class="language__text__title">Our language solution</h3>
                     <p class="language__text__description">Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since</p>
                 </div>
-
                 <div class="language__content">
-
                     <div class="language__translation">
                         <h4 class="language__title">Translation</h4>
                         <p class="language__description">Unlimited and secure translation for fixed price. Translate
                             billions of characters per day</p>
                         <img class="language__image" src="./images/group1.png" alt="language image1">
                     </div>
-
                     <div class="language__translation">
                         <h4 class="language__title">Social listening</h4>
                         <p class="language__description">Unlimited and secure translation for fixed price. Translate
                             billions of characters per day</p>
                         <img class="language__image" src="./images/group2.png" alt="language image2">
                     </div>
-
                     <div class="language__translation">
                         <h4 class="language__title">Content generation</h4>
                         <p class="language__description">Unlimited and secure translation for fixed price. Translate
                             billions of characters per day</p>
                         <img class="language__image" src="./images/group3.png" alt="language image3">
                     </div>
-
                 </div>
-
-
             </div>
         </section>
 
         <section class="section">
-
             <div class="container__product">
-
                 <div class="product__text">
                     <h3 class="product__text__title">Who is this product for?</h3>
                     <p class="product__text__description">Lingvanex Bot can simply solve a language barrier problem in
@@ -90,17 +76,13 @@
                         languages
                         in a conversation and translates all messages of your team members into a chosen language.</p>
                 </div>
-
                 <div class="tabs__block">
-
                     <div class="tabs__button">
-                        <button class="button__travels">For travelers</button>
-                        <button class="button__organization">For travel organization</button>
-                        <button class="button__employees">For employees</button>
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_1">For travelers</button>
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_2">For travel organization</button>
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_3">For employees</button>
                     </div>
-
-                    <div class="tab__card">
-
+                    <div class="tabs__item" id="tab_1">
                         <div class="tab__card__text">
                             <h4 class="tab__card__title">For travelers</h4>
                             <ul class="tab__card__description">
@@ -110,31 +92,53 @@
                                 <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms . and more.</li>
                             </ul>
                         </div>
-
                         <div class="tab__card__img">
                             <img class="card__image" src="./images/image1.png" alt="travelers image">
                         </div>
                     </div>
 
-                </div>
+                    <div class="tabs__item" id="tab_2">
+                        <div class="tab__card__text">
+                            <h4 class="tab__card__title">For travel organization</h4>
+                            <ul class="tab__card__description">
+                                <li>Highlight one word in the text on the page.</li>
+                                <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms . and more.</li>
+                                <li>Highlight one word in the text on the page.</li>
+                                <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms . and more.</li>
+                            </ul>
+                        </div>
+                        <div class="tab__card__img">
+                            <img class="card__image" src="./images/image2.png" alt="organization image">
+                        </div>
+                    </div>
 
+                    <div class="tabs__item" id="tab_3">
+                        <div class="tab__card__text">
+                            <h4 class="tab__card__title">For employees</h4>
+                            <ul class="tab__card__description">
+                                <li>Highlight one word in the text on the page.</li>
+                                <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms . and more.</li>
+                                <li>Highlight one word in the text on the page.</li>
+                                <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms . and more.</li>
+                            </ul>
+                        </div>
+                        <div class="tab__card__img">
+                            <img class="card__image" src="./images/image3.png" alt="employees image">
+                        </div>
+                    </div>
+
+                </div>
                 <div class="shared__button">
-                    <button class="universal__button">Request a free trial</button>
+                    <button class="universal__button" data-text="Request a free trial">Request a free trial</button>
                 </div>
-
             </div>
-
         </section>
 
-
         <section class="section">
-
             <div class="container__lingvanex">
-
                 <div class="lingvanex__text">
                     <h2 class="lingvanex__text__title">How can Lingvanex help you?</h2>
                 </div>
-
                 <div class="lingvanex__grid">
                     <div>
                         <svg width="50" height="46" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,9 +234,7 @@
                 <div class="shared__button">
                     <button class="universal__button">Request a free trial</button>
                 </div>
-
             </div>
-
         </section>
 
     </main>
@@ -241,8 +243,9 @@
         <h4 class="main__footer__text">Footer</h4>
     </footer>
 
-
 </div>
+
 <script src="main.js"></script>
+
 </body>
 </html>

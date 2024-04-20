@@ -40,7 +40,6 @@ body {
 }
 
 .travel__title {
-    /*font-family: var(--font-family);*/
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 70px;
@@ -52,7 +51,6 @@ body {
 }
 
 .travel__description {
-    /*font-family: var(--third-family);*/
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -85,7 +83,6 @@ body {
 }
 
 .language__text__title {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 60px;
@@ -97,7 +94,6 @@ body {
 }
 
 .language__text__description {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -130,7 +126,6 @@ body {
 }
 
 .language__title {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 34px;
@@ -142,7 +137,6 @@ body {
 }
 
 .language__description {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -191,7 +185,6 @@ body {
 }
 
 .product__text__title {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 60px;
@@ -202,7 +195,6 @@ body {
 }
 
 .product__text__description {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -233,52 +225,33 @@ body {
     gap: 16px;
 }
 
-.button__travels {
-    border-radius: 12px;
-    padding: 16px 32px;
-    width: 167px;
-    cursor: pointer;
-    border: none;
-    text-align: center;
+.tabs__nav-btn {
+        border-radius: 12px;
+        padding: 16px 32px;
+        /*width: 185px;*/
+        cursor: pointer;
+        border: none;
+        text-align: center;
 }
 
-.button__travels:hover,
-.button__travels.active {
+.tabs__nav-btn:hover,
+.tabs__nav-btn.active {
     background: #0146fe;
     color: #fff;
 }
 
-.button__organization {
-    border-radius: 12px;
-    padding: 16px 32px;
-    width: 247px;
-    cursor: pointer;
-    border: none;
-    text-align: center;
+.tabs__item {
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    margin-top:32px ;
+    display: none;
+    flex-direction: row;
+    gap:32px;
 }
 
-.button__organization:hover,
-.button__organization.active {
-    background: #0146fe;
-    color: #fff;
-}
-
-.button__employees {
-    border-radius: 12px;
-    padding: 16px 32px;
-    width: 185px;
-    cursor: pointer;
-    border: none;
-    text-align: center;
-}
-
-.button__employees:hover,
-.button__employees.active {
-    background: #0146fe;
-    color: #fff;
-}
-
-.tab__card {
+.tabs__item.active {
     border: 2px solid rgba(0, 0, 0, 0.04);
     border-radius: 32px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
@@ -289,15 +262,14 @@ body {
     gap:32px;
 }
 
+
 .tab__card__text {
     width: 514px;
-    height: 242px;
     border: 1px solid red;
-    margin:42px 0 0 42px;
+    margin:42px 0 78px 42px;
 }
 
 .tab__card__title {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 60px;
@@ -306,7 +278,6 @@ body {
     color: #000;
 }
 .tab__card__description{
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -333,11 +304,10 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .tab__card {
+    .tabs__item.active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width:100%;
     }
     .tab__card__img {
         margin: 42px 0;
@@ -397,8 +367,8 @@ body {
 
 
 /*lingvanex shared*/
+
 .lingvanex__title{
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 34px;
@@ -409,7 +379,6 @@ body {
 
 }
 .lingvanex__description {
-    /*font-family: var(--font-family);*/
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -448,10 +417,17 @@ body {
     height: 64px;
     border: none;
     cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #fff;
 }
 
 .universal__button:hover {
     color: #fff;
     background: #0146fe;
 }
+
 

@@ -1,30 +1,27 @@
-// const tabs = document.querySelectorAll('.tab');
-// const tabContents = document.querySelectorAll('.tab-content');
-//
-// tabs.forEach((tab, index) => {
-//     tab.addEventListener('click', () => {
-//         tabs.forEach(tab => tab.classList.remove('active'));
-//         tabContents.forEach(content => content.classList.remove('active'));
-//
-//         tab.classList.add('active');
-//         tabContents[index].classList.add('active');
-//     });
-// });
+const tabsBtn   = document.querySelectorAll(".tabs__nav-btn");
+const tabsItems = document.querySelectorAll(".tabs__item");
 
+tabsBtn.forEach(onTabClick);
 
-// active button
-const button = document.querySelector('.button__travels');
-const organizationButton = document.querySelector('.button__organization');
-const employeesButton = document.querySelector('.button__employees');
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
 
-button.addEventListener('click', function() {
-    button.classList.toggle('active');
-});
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('active');
+            });
 
-organizationButton.addEventListener('click', function() {
-    organizationButton.classList.toggle('active');
-});
+            tabsItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
 
-employeesButton.addEventListener('click', function() {
-    employeesButton.classList.toggle('active');
-});
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+    });
+}
+
+document.querySelector('.tabs__nav-btn').click();
