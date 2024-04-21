@@ -6,7 +6,7 @@ body {
 .wrapper_container {
     max-width: 1240px;
     margin: 0 auto;
-    background: #fff;
+    padding: 0 16px;
 }
 
 .section {
@@ -16,7 +16,6 @@ body {
 /*header*/
 
 .main__header {
-    max-width: 1240px;
     height: 80px;
     justify-content: center;
     display: flex;
@@ -73,7 +72,7 @@ body {
 }
 
 .language__text {
-    width: 681px;
+    max-width: 681px;
     margin-top: 64px;
 }
 
@@ -112,11 +111,11 @@ body {
 .language__translation {
     border: 2px solid rgba(0, 0, 0, 0.04);
     border-radius: 32px;
-    height: 422px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 16px;
 }
 
 .language__title {
@@ -141,20 +140,25 @@ body {
     margin-top: 12px;
 }
 
+.language__container__image {
+    height: 245px;
+    display: flex;
+    align-items: center;
+}
+
 .language__image {
-    width: 309px;
-    height: 129px;
+    max-width: 309px;
+    height: auto;
     object-fit: contain;
-    margin-top: 12px;
 }
 
 @media (max-width: 1200px) {
     .language__content {
         flex-direction: column;
     }
+
     .language__translation {
-        width:100%;
-        height: 100%;
+        width: 100%;
     }
 }
 
@@ -168,7 +172,7 @@ body {
 }
 
 .product__text {
-    width: 800px;
+    max-width: 800px;
     margin-top: 70px;
     text-align: center;
     display: flex;
@@ -199,17 +203,16 @@ body {
 }
 
 .tabs__block {
-    width: 1240px;
+    max-width: 1137px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin: 64px 0;
+    margin: 64px 0 120px;
 }
 
 .tabs__button {
-    width: 631px;
-    height: 50px;
+    max-width: 631px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,11 +220,11 @@ body {
 }
 
 .tabs__nav-btn {
-        border-radius: 12px;
-        padding: 16px 32px;
-        cursor: pointer;
-        border: none;
-        text-align: center;
+    border-radius: 12px;
+    padding: 16px 32px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
 }
 
 .tabs__nav-btn:hover,
@@ -235,10 +238,11 @@ body {
     border-radius: 32px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
     background: #fff;
-    margin-top:32px ;
+    margin-top: 32px;
     display: none;
     flex-direction: row;
-    gap:32px;
+    gap: 32px;
+    position: relative;
 }
 
 .tabs__item.active {
@@ -246,16 +250,43 @@ body {
     border-radius: 32px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
     background: #fff;
-    margin-top:32px ;
+    margin-top: 32px;
     display: flex;
     flex-direction: row;
-    gap:32px;
+    gap: 32px;
 }
 
+.tabs__item:before {
+    content: "";
+    position: absolute;
+    top: 77px;
+    left: 4%;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    width: 92%;
+    height: 87%;
+    border-radius: 32px;
+    z-index: -1;
+    background-color: white;
+}
+
+.tabs__item:after {
+    content: "";
+    position: absolute;
+    top: 76px;
+    left: 7%;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    width: 86%;
+    height: 93%;
+    border-radius: 32px;
+    z-index: -2;
+    background-color: white;
+}
 
 .tab__card__text {
-    width: 514px;
-    margin:42px 0 78px 42px;
+    max-width: 514px;
+    margin: 42px 0 78px 42px;
 }
 
 .tab__card__title {
@@ -267,7 +298,7 @@ body {
     color: #000;
 }
 
-.tab__card__description{
+.tab__card__description {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -276,33 +307,55 @@ body {
     color: rgba(42, 43, 47, 0.9);
     list-style-type: disc;
     padding-left: 20px;
-    margin-top:32px;
+    margin-top: 32px;
 }
 
 .tab__card__img {
-    margin:42px 42px 42px 0;
-    width: 507px;
-    height: 338px;
+    margin: 42px 42px 42px 0;
+    max-width: 507px;
+    height: auto;
 }
 
-.card__image{
+.card__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 32px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
     .tabs__item.active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .tab__card__img {
-        margin: 42px 0;
+
+    .tabs__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .tab__card__img {
+        width: 100%;
+        margin: 0;
+        max-width: unset;
+    }
+
+    .card__image {
+        display: block;
+        max-width: unset;
+        border-radius: 0 0 32px 32px;
+    }
+
     .tab__card__text {
         margin: 42px 0;
+        max-width: unset;
+        padding: 0 16px;
+    }
+
+    .tabs__item:before, .tabs__item:after {
+        content: unset;
     }
 }
 
@@ -319,6 +372,7 @@ body {
 .lingvanex__text {
 
 }
+
 .lingvanex__text__title {
     font-family: "Inter", sans-serif;
     font-weight: 900;
@@ -335,7 +389,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     justify-items: center;
-    margin:70px 0;
+    margin: 70px 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -349,14 +403,13 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 295px;
-    gap:14px;
+    max-width: 295px;
+    gap: 14px;
 }
-
 
 /*lingvanex shared*/
 
-.lingvanex__title{
+.lingvanex__title {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 34px;
@@ -366,6 +419,7 @@ body {
     color: #000;
 
 }
+
 .lingvanex__description {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -381,7 +435,6 @@ body {
 .main__footer {
     margin-top: 80px;
     height: 200px;
-    max-width: 1240px;
     justify-content: center;
     display: flex;
     background: yellowgreen;
@@ -392,6 +445,7 @@ body {
 }
 
 /*universal button*/
+
 .shared__button {
     display: flex;
     justify-content: center;
@@ -401,8 +455,8 @@ body {
 .universal__button {
     border-radius: 12px;
     padding: 20px 24px;
-    width: 366px;
-    height: 64px;
+    max-width: 366px;
+    height: auto;
     border: none;
     cursor: pointer;
     font-family: "Inter", sans-serif;
